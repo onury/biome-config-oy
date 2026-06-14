@@ -31,3 +31,7 @@ npm i -D @biomejs/biome biome-config-oy
 - Import organization enabled.
 
 Each project sets its own `files.includes` and `vcs`.
+
+### Related projects
+- [`tsconfig-oy`](https://github.com/onury/tsconfig-oy)
+- [`eslint-config-oy`](https://github.com/onury/eslint-config-oy)
