@@ -1,0 +1,29 @@
+{
+  "name": "biome-config-oy",
+  "version": "1.0.0",
+  "description": "Shared Biome (lint + format) config for my projects.",
+  "repository": "onury/biome-config-oy",
+  "author": "Onur Yildirim <onur@cutepilot.com>",
+  "license": "MIT",
+  "main": "biome.json",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "biome.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "biome",
+    "biome-config",
+    "lint",
+    "linter",
+    "format",
+    "formatter",
+    "config"
+  ],
+  "peerDependencies": {
+    "@biomejs/biome": ">=2.5.0"
+  }
+}
