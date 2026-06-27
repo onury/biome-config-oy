@@ -26,9 +26,12 @@ npm i -D @biomejs/biome biome-config-oy
 - 2-space indent, single quotes, semicolons, no trailing commas, width 100.
 - `recommended` rules on, with project-style exceptions disabled
   (`noExplicitAny`, `noImplicitAnyLet`, `noConfusingVoidType`, `noSparseArray`,
-  `useTemplate`, `noNonNullAssertion`, `noParameterAssign`, `noArguments`,
-  `noUnusedFunctionParameters`, `noVoidTypeReturn`).
+  `useTemplate`, `noNonNullAssertion`, `noParameterAssign`, `useImportType`,
+  `noArguments`, `noUnusedFunctionParameters`, `noVoidTypeReturn`).
 - Import organization enabled.
+- **Decorator-metadata safe** (NestJS/TypeORM): parameter decorators are parsed
+  (`unsafeParameterDecoratorsEnabled`) and `useImportType` is **off** — auto type
+  imports would erase DI'd classes and break `emitDecoratorMetadata` at runtime.
 
 Each project sets its own `files.includes` and `vcs`.
 
